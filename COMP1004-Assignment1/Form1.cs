@@ -16,5 +16,10 @@ namespace COMP1004_Assignment1
         {
             InitializeComponent();
         }
+
+        private void toolStripContainer1_TopToolStripPanel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
