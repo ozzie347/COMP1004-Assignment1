@@ -208,6 +208,7 @@ namespace COMP1004_Assignment1
             this.clearButton.TabIndex = 3;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // logoPictureBox
             // 

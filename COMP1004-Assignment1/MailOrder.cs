@@ -162,5 +162,20 @@ namespace COMP1004_Assignment1
             //notify the user that the form has been sent to the printer
             MessageBox.Show("Form has been sent to the printer.", "Printing...", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        /// <summary>
+        /// Clear all the fields
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void clearButton_Click(object sender, EventArgs e)
+        {
+            //clear the following fields
+            employeeNameTextBox.Clear();
+            employeeIDTextBox.Clear();
+            hoursWorkedTextBox.Clear();
+            totalSalesTextBox.Clear();
+            salesBonusTextBox.Clear();
+        }
     }
 }
