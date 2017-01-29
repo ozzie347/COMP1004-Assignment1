@@ -35,22 +35,22 @@ namespace COMP1004_Assignment1
             }
         }
 
-        private void totalSalesTextBox_TextChanged(object sender, EventArgs e)
+        private void totalSalesTextBox_Leave(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    double totalSales;
-            //    string currencyTotal;
-            //    totalSales = Convert.ToDouble(totalSalesTextBox.Text.Substring(1));
-            //    currencyTotal = totalSales.ToString("C0");
+            try
+            {
+                decimal totalSales;
+                string currencyTotal;
+                totalSales = Convert.ToDecimal(totalSalesTextBox.Text);
+                currencyTotal = totalSales.ToString("C2");
 
-            //    totalSalesTextBox.Text = currencyTotal;                
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("Please enter a number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    Console.WriteLine("An error occurred", ex);
-            //}
+                totalSalesTextBox.Text = currencyTotal;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Please enter a number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Console.WriteLine("An error occurred", ex);
+            }
         }
 
         private void englishRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -77,6 +77,11 @@ namespace COMP1004_Assignment1
             nextButton.Text = "Prochain";
             printButton.Text = "Impression";
             clearButton.Text = "Clair";
+        }
+
+        private void calculateButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

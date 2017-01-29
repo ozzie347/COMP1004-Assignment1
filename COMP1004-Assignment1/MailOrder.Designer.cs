@@ -151,7 +151,7 @@
             this.totalSalesTextBox.Name = "totalSalesTextBox";
             this.totalSalesTextBox.Size = new System.Drawing.Size(223, 22);
             this.totalSalesTextBox.TabIndex = 3;
-            this.totalSalesTextBox.TextChanged += new System.EventHandler(this.totalSalesTextBox_TextChanged);
+            this.totalSalesTextBox.Leave += new System.EventHandler(this.totalSalesTextBox_Leave);
             // 
             // salesBonusTextBox
             // 
@@ -180,6 +180,7 @@
             this.calculateButton.TabIndex = 1;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // nextButton
             // 
