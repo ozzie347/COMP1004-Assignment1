@@ -21,10 +21,10 @@ namespace COMP1004_Assignment1
         {
             try
             {
-                double hoursWorked;
-                hoursWorked = Convert.ToDouble(hoursWorkedTextBox.Text);
+                double _hoursWorked;
+                _hoursWorked = Convert.ToDouble(hoursWorkedTextBox.Text);
 
-                if(hoursWorked > 160)
+                if(_hoursWorked > 160)
                 {
                     MessageBox.Show("Hours worked must be 160 or less.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -39,12 +39,12 @@ namespace COMP1004_Assignment1
         {
             try
             {
-                decimal totalSales;
-                string currencyTotal;
-                totalSales = Convert.ToDecimal(totalSalesTextBox.Text);
-                currencyTotal = totalSales.ToString("C2");
+                double _totalSales;
+                string _currencyTotal;
+                _totalSales = Convert.ToDouble(totalSalesTextBox.Text);
+                _currencyTotal = _totalSales.ToString("C2");
 
-                totalSalesTextBox.Text = currencyTotal;
+                totalSalesTextBox.Text = _currencyTotal;
             }
             catch (Exception ex)
             {
@@ -81,7 +81,15 @@ namespace COMP1004_Assignment1
 
         private void calculateButton_Click(object sender, EventArgs e)
         {
+            double _pctHoursWorked;
+            double _totalBonusAmt;
+            double _salesBonus;
 
+            _pctHoursWorked = Convert.ToDouble(hoursWorkedTextBox.Text) / 160;
+            _totalBonusAmt = Convert.ToDouble(totalSalesTextBox.Text.Substring(1)) * 0.02;
+            _salesBonus = _pctHoursWorked * _totalBonusAmt;
+
+            salesBonusTextBox.Text = _salesBonus.ToString();
         }
 
         private void nextButton_Click(object sender, EventArgs e)
