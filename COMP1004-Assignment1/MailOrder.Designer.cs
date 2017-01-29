@@ -191,6 +191,7 @@
             this.nextButton.TabIndex = 2;
             this.nextButton.Text = "Next";
             this.nextButton.UseVisualStyleBackColor = true;
+            this.nextButton.Click += new System.EventHandler(this.nextButton_Click);
             // 
             // clearButton
             // 
@@ -254,6 +255,7 @@
             this.printButton.TabIndex = 6;
             this.printButton.Text = "Print";
             this.printButton.UseVisualStyleBackColor = true;
+            this.printButton.Click += new System.EventHandler(this.printButton_Click);
             // 
             // salesBonusForm
             // 

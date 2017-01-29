@@ -83,5 +83,18 @@ namespace COMP1004_Assignment1
         {
 
         }
+
+        private void nextButton_Click(object sender, EventArgs e)
+        {
+            employeeNameTextBox.Clear();
+            employeeIDTextBox.Clear();
+            hoursWorkedTextBox.Clear();
+            salesBonusTextBox.Clear();
+        }
+
+        private void printButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Form has been sent to the printer.", "Printing...", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
