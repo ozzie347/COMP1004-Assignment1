@@ -151,6 +151,7 @@
             this.totalSalesTextBox.Name = "totalSalesTextBox";
             this.totalSalesTextBox.Size = new System.Drawing.Size(223, 22);
             this.totalSalesTextBox.TabIndex = 3;
+            this.totalSalesTextBox.TextChanged += new System.EventHandler(this.totalSalesTextBox_TextChanged);
             // 
             // salesBonusTextBox
             // 
@@ -173,28 +174,28 @@
             // 
             // calculateButton
             // 
-            this.calculateButton.Location = new System.Drawing.Point(12, 418);
+            this.calculateButton.Location = new System.Drawing.Point(12, 411);
             this.calculateButton.Name = "calculateButton";
-            this.calculateButton.Size = new System.Drawing.Size(75, 23);
+            this.calculateButton.Size = new System.Drawing.Size(90, 30);
             this.calculateButton.TabIndex = 1;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
             // 
             // nextButton
             // 
-            this.nextButton.Location = new System.Drawing.Point(144, 418);
+            this.nextButton.Location = new System.Drawing.Point(135, 411);
             this.nextButton.Name = "nextButton";
             this.nextButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.nextButton.Size = new System.Drawing.Size(75, 23);
+            this.nextButton.Size = new System.Drawing.Size(90, 30);
             this.nextButton.TabIndex = 2;
             this.nextButton.Text = "Next";
             this.nextButton.UseVisualStyleBackColor = true;
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(395, 418);
+            this.clearButton.Location = new System.Drawing.Point(380, 411);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(75, 23);
+            this.clearButton.Size = new System.Drawing.Size(90, 30);
             this.clearButton.TabIndex = 3;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
@@ -222,31 +223,33 @@
             // frenchRadioButton
             // 
             this.frenchRadioButton.AutoSize = true;
-            this.frenchRadioButton.Location = new System.Drawing.Point(0, 50);
+            this.frenchRadioButton.Location = new System.Drawing.Point(0, 48);
             this.frenchRadioButton.Name = "frenchRadioButton";
             this.frenchRadioButton.Size = new System.Drawing.Size(83, 21);
             this.frenchRadioButton.TabIndex = 1;
             this.frenchRadioButton.Text = "Français";
             this.frenchRadioButton.UseVisualStyleBackColor = true;
+            this.frenchRadioButton.CheckedChanged += new System.EventHandler(this.frenchRadioButton_CheckedChanged);
             // 
             // englishRadioButton
             // 
             this.englishRadioButton.AutoSize = true;
             this.englishRadioButton.Checked = true;
-            this.englishRadioButton.Location = new System.Drawing.Point(0, 22);
+            this.englishRadioButton.Location = new System.Drawing.Point(0, 21);
             this.englishRadioButton.Name = "englishRadioButton";
             this.englishRadioButton.Size = new System.Drawing.Size(75, 21);
             this.englishRadioButton.TabIndex = 0;
             this.englishRadioButton.TabStop = true;
             this.englishRadioButton.Text = "English";
             this.englishRadioButton.UseVisualStyleBackColor = true;
+            this.englishRadioButton.CheckedChanged += new System.EventHandler(this.englishRadioButton_CheckedChanged);
             // 
             // printButton
             // 
-            this.printButton.Location = new System.Drawing.Point(268, 418);
+            this.printButton.Location = new System.Drawing.Point(261, 411);
             this.printButton.Name = "printButton";
             this.printButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.printButton.Size = new System.Drawing.Size(75, 23);
+            this.printButton.Size = new System.Drawing.Size(90, 30);
             this.printButton.TabIndex = 6;
             this.printButton.Text = "Print";
             this.printButton.UseVisualStyleBackColor = true;
