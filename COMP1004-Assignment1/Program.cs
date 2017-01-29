@@ -1,11 +1,11 @@
 ﻿/**
-
+App: COMP1004-Assignment1
+Author: Nicholas Oshukany
+Last Modified: 01/29/2017
+Description: Calculate sales bonuses for employees based on entered values.
 */
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace COMP1004_Assignment1

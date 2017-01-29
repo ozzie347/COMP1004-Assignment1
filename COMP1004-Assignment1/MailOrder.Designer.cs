@@ -1,4 +1,11 @@
-﻿namespace COMP1004_Assignment1
+﻿/**
+App: COMP1004-Assignment1
+Author: Nicholas Oshukany
+Last Modified: 01/29/2017
+Description: Calculate sales bonuses for employees based on entered values.
+*/
+
+namespace COMP1004_Assignment1
 {
     partial class salesBonusForm
     {
@@ -136,7 +143,7 @@
             this.hoursWorkedTextBox.Name = "hoursWorkedTextBox";
             this.hoursWorkedTextBox.Size = new System.Drawing.Size(223, 22);
             this.hoursWorkedTextBox.TabIndex = 1;
-            this.hoursWorkedTextBox.TextChanged += new System.EventHandler(this.hoursWorkedTextBox_TextChanged);
+            this.hoursWorkedTextBox.Leave += new System.EventHandler(this.hoursWorkedTextBox_Leave);
             // 
             // employeeIDTextBox
             // 
